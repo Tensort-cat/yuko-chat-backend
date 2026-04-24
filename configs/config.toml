@@ -1,0 +1,37 @@
+[mainConfig]
+appName = "YukoChat"
+host = "你的服务器IP地址" # 替换为你的服务器IP地址
+port = 8000
+
+[mysqlConfig]
+host = "你的服务器IP地址" # 替换为你的服务器IP地址
+port = 3306
+user = "你的数据库用户名" # 替换为你的数据库用户名
+password = "你的数据库密码" # 替换为你的数据库密码
+database = "yuko_chat"
+
+[redisConfig]
+host = "你的服务器IP地址" # 替换为你的服务器IP地址
+port = "你的Redis端口" # 替换为你的Redis端口，一般默认为6379
+password = "你的Redis密码" # 替换为你的Redis密码
+db = 0
+
+[logConfig]
+logPath = "./logs/app.log"
+
+[kafkaConfig]
+hostPort = "IP地址:kafka端口" # 替换为你的Kafka服务器地址和端口，例如 "localhost:9092"
+topic = "yuko_chat_messages"
+partition = 0
+timeout = 10 # 单位秒
+
+[staticSrcConfig]
+staticAvatarPath = "../static/avatars" # 存储用户头像的路径
+staticFilePath = "../static/files" # 存储用户文件的路径
+
+[emailConfig] # 用于发送验证码 (以qq邮箱为例)
+host = "smtp.qq.com"
+port = 465
+username = "你的qq邮箱地址" # 替换为你的邮箱地址
+password = "你的邮箱授权码" # 替换为你的邮箱授权码
+from = "你的qq邮箱地址" # 替换为你的邮箱地址
