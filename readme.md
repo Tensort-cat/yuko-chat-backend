@@ -78,6 +78,7 @@ go run cmd/main.go
 * 会话管理
 * 单聊 / 群聊
 * WebSocket 实时通信
+* 基于 WebRTC 的视频通话
 * Kafka 异步消息处理
 * Redis 缓存支持
 
